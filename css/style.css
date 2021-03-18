@@ -7,13 +7,16 @@ body{
   font-family: 'Roboto', sans-serif;
 }
 .container{
+  padding: 30px;
   width: 40%;
   margin: auto;
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 .todo_list-delete{
   cursor: pointer;
   margin-left: 15px;
+}
+.template{
+  display: none;
 }
