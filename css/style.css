@@ -6,11 +6,16 @@
 body{
   font-family: 'Roboto', sans-serif;
   padding: 50px;
+  text-align: center;
+}
+h1{
+  font-size: 70px;
+  color: #D33400;
 }
 .container{
   background-color: #fef9f3;
   padding: 30px;
-  width: 40%;
+  width: 60%;
   margin: auto;
   display: flex;
   justify-content: space-between;
@@ -32,15 +37,35 @@ body{
   cursor: pointer;
   margin-left: 10px;
 }
-
-#remove_last{
-  padding: 5px;
-  background-color: #ddd;
-  border-radius: 5px;
-  border: 1px solid grey;
+.input_text,
+.todo_list{
+  width: 50%;
+}
+.btn{
+  width: 50%;
+  margin: 20px auto;
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  color: #fef9f3;
+  padding: 10px;
+  background-color: #D33400;
+  border-radius: 15px;
+  border: 1px solid pink;
   outline: none;
   cursor: pointer;
 }
+#add_list{
+  padding: 5px;
+  border-radius: 5px;
+  text-align: center;
+  outline: none;
+  border: 1px solid #D33400;
+}
+label{
+  color: #D33400;
+}
+
 .template{
   display: none;
 }

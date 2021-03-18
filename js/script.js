@@ -42,7 +42,19 @@ $('.container').on('click','#remove_last',
   }
 );
 
-
+$('.container').on('click','#add_list_btn',
+  function () {
+    var addThing = $('#add_list').val();
+    if ( addThing != "" ) { // Controllo che non sia vuoto
+      addThing = addThing[0].toUpperCase() + addThing.substring(1); // Trasformo la prima letterea in maiuscolo
+      // var cloneList = $('.template li').clone(); // Clono l'elemento che dovrò inserire nella pagina
+      // cloneList.prepend(addThing); // Aggiungo i valori all'elemento clonato
+      // $('.todo_list').append(cloneList); // Inserisco l'elemento clonato nella pagina
+      clonaAggiungi(cloneList.clone(),addThing,todoList);
+      $('#add_list').val(""); // Pulisco l'input text
+    }
+  }
+);
 $('#add_list').keydown(function (event) {
 
   if ( event.which == 13 ) {

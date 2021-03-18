@@ -13,14 +13,18 @@
     <title>Todo list</title>
   </head>
   <body>
+    <h1>Todo List</h1>
     <div class="container">
       <ul class="todo_list">
         <li>Fare colazione <span class="todo_list-delete">X</span></li>
       </ul>
-      <label for="add_list">Aggiungi:
-      <input id="add_list" type="text" name="" value="" placeholder="Aggiungi cose da fare">
-      </label>
-      <button id="remove_last" type="button" name="button">Rimuovi ultimo elemento</button>
+      <div class="input_text">
+        <label for="add_list">
+        <input id="add_list" type="text" name="" value="" placeholder="Aggiungi cose da fare">
+        </label>
+        <button id="add_list_btn" class="btn" type="button" name="button">Aggiungi elemento</button>
+        <button id="remove_last" class="btn" type="button" name="button">Rimuovi ultimo elemento</button>
+      </div>
     </div>
     <div class="template">
       <li><span class="todo_list-delete">X</span></li>
