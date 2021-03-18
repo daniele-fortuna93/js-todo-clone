@@ -21,9 +21,15 @@ for (var i = 0; i < todoThings.length; i++) {
 
 // 3. Evento al click
 $('.todo_list').on('click','.todo_list-delete', // Sempre in ascolto anche per elementi aggiunti dopo il caricamento della pagina
-function(){
-  $(this).parent().remove();
-});
+  function(){
+
+    $(this).fadeOut(400,
+      function () { //Effetto fadeOut 
+      $(this).parent().remove();
+      }
+    );
+  }
+);
 
 $('#add_list').keydown(function (event) {
 
