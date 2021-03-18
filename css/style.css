@@ -5,14 +5,28 @@
 }
 body{
   font-family: 'Roboto', sans-serif;
+  padding: 50px;
 }
 .container{
+  background-color: #fef9f3;
   padding: 30px;
   width: 40%;
   margin: auto;
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+  border: 3px solid pink;
+  border-radius: 5px;
+}
+.todo_list li{
+  color: #fef9f3;
+  width: 200px;
+  padding: 10px;
+  background-color: #D33400;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
 }
 .todo_list-delete{
   cursor: pointer;
