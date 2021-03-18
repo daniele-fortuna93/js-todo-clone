@@ -12,10 +12,20 @@ body{
   margin: auto;
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
 }
 .todo_list-delete{
   cursor: pointer;
-  margin-left: 15px;
+  margin-left: 10px;
+}
+
+#remove_last{
+  padding: 5px;
+  background-color: #ddd;
+  border-radius: 5px;
+  border: 1px solid grey;
+  outline: none;
+  cursor: pointer;
 }
 .template{
   display: none;

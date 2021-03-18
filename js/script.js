@@ -24,12 +24,24 @@ $('.todo_list').on('click','.todo_list-delete', // Sempre in ascolto anche per e
   function(){
 
     $(this).fadeOut(400,
-      function () { //Effetto fadeOut 
+      function () { //Effetto fadeOut
       $(this).parent().remove();
       }
     );
   }
 );
+
+// Tasto elimina ultimo elemento
+$('.container').on('click','#remove_last',
+  function () {
+    $('.todo_list li:last-child').fadeOut(400,
+      function () {
+        $('.todo_list li:last-child').remove();
+      }
+    );
+  }
+);
+
 
 $('#add_list').keydown(function (event) {
 
